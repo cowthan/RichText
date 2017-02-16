@@ -1,4 +1,10 @@
 # RichText
+=======
+多样化的文本处理，源自https://github.com/zzhoujay/Markdown，但做了大改，所以就不合了
+
+- 添加了Spannable的demo
+- 添加了AwesomeText，一个将任意View变成ImageSpan的库，可以实现EditText删除一个词组
+
 
 > Android平台下的富文本解析器
 
@@ -90,3 +96,4 @@ SOFTWARE.
 ```
 
 _by zzhoujay_
+

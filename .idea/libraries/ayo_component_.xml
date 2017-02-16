@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="ayo-component-">
+    <ANNOTATIONS>
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ayo-component/annotations.zip!/" />
+    </ANNOTATIONS>
+    <CLASSES>
+      <root url="file://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ayo-component/res" />
+      <root url="jar://$PROJECT_DIR$/app/build/intermediates/exploded-aar/ayo-component/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>
