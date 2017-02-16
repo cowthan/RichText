@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">RichTextDemo</string>
+    <string name="hello_world">"@ChuckNorris does not use @JakeWharton libraries to develop on #Android."</string>
+</resources>

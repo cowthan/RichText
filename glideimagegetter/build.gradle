@@ -1,0 +1,59 @@
+apply plugin: 'com.android.library'
+
+def version_code = 2
+def version_name = "1.0.1"
+
+android {
+    compileSdkVersion 24
+    buildToolsVersion "25.0.0"
+
+    defaultConfig {
+        minSdkVersion 7
+        targetSdkVersion 24
+        versionCode version_code
+        versionName version_name
+
+        resourcePrefix "zhou_glide_"
+
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    lintOptions {
+        abortOnError false
+    }
+}
+
+dependencies {
+    compile fileTree(include: ['*.jar'], dir: 'libs')
+//    compile 'com.android.support:appcompat-v7:24.2.1'
+    testCompile 'junit:junit:4.12'
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile project(':richtext')
+//    compile project(':richtext')
+}
+
+//publish {
+//
+//    Properties properties = new Properties()
+//    properties.load(project.rootProject.file('local.properties').newDataInputStream())
+//    //bintray.com用户名
+//    userOrg = properties.getProperty("bintray.user")
+//    //jcenter上的路径
+//    groupId = "com.zzhoujay.glideimagegetter"
+//    //项目名称
+//    artifactId = 'glideimagegetter'
+//    //版本号
+//    publishVersion = version_name
+//    //描述，不重要
+//    desc = 'RichText的Glide图片加载库的插件'
+//    //网站，不重要
+//    website = 'https://github.com/zzhoujay/RichTex'
+//
+//}
