@@ -21,7 +21,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import org.ayo.richtext.AwesomeTextHandler;
+import org.ayo.richtext.awesometext.AwesomeTextHandler;
 
 import zhou.demo.R;
 

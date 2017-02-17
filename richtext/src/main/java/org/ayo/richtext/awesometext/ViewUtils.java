@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package org.ayo.richtext;
+package org.ayo.richtext.awesometext;
 
 import android.graphics.Bitmap;
 import android.graphics.Canvas;

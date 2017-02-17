@@ -128,6 +128,12 @@ public class MainnActivity extends MainPagerActivity {
                 menuItem.addLeaf(new Leaf("demo", "", AwesomeTextDemo.class, 1));
             }
 
+            menuItem = new MenuItem("HtmlTagHandler", R.drawable.weixin_normal, R.drawable.weixin_pressed);
+            m.addMenuItem(menuItem);
+            {
+                menuItem.addLeaf(new Leaf("demo", "", HtmlHandlerActivity.class));
+            }
+
         }
         /////menu finished
     }

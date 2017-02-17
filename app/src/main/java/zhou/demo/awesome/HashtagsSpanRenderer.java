@@ -20,7 +20,7 @@ import android.content.Context;
 import android.view.View;
 import android.widget.TextView;
 
-import org.ayo.richtext.AwesomeTextHandler;
+import org.ayo.richtext.awesometext.AwesomeTextHandler;
 
 import zhou.demo.R;
 

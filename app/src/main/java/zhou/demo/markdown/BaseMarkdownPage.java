@@ -8,6 +8,7 @@ import android.support.annotation.Nullable;
 import android.text.Html;
 import android.text.Spanned;
 import android.text.method.LinkMovementMethod;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -45,6 +46,8 @@ public abstract class BaseMarkdownPage extends MasterFragment {
                 Spanned spanned = MarkDown.fromMarkdown(getText(), new Html.ImageGetter() {
                     @Override
                     public Drawable getDrawable(String source) {
+
+                        Log.i("markdown-image", "需要一个图片：" + source);
                         Drawable drawable = new ColorDrawable(Color.LTGRAY);
                         drawable.setBounds(0, 0, textView.getWidth() - textView.getPaddingLeft() - textView.getPaddingRight(), 400);
                         return drawable;

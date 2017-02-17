@@ -21,7 +21,7 @@ import android.support.v7.app.AppCompatActivity;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import org.ayo.richtext.AwesomeTextHandler;
+import org.ayo.richtext.awesometext.AwesomeTextHandler;
 
 import zhou.demo.R;
 
