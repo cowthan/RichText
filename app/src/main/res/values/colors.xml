@@ -15,4 +15,12 @@
 
     <color name="mention_color">#21a5b8</color>
     <color name="hashtag_color">#e45555</color>
+
+
+    <color name="text_color">#000000</color>
+    <color name="color1">#96C13E</color>
+    <color name="color2">#681300</color>
+    <color name="color3">#68009E</color>
+    <color name="color4">#003D4E</color>
+    <color name="color5">#0094FF</color>
 </resources>

@@ -6,6 +6,52 @@
 - 添加了AwesomeText，一个将任意View变成ImageSpan的库，可以实现EditText删除一个词组
 
 
+关于Span
+- TextView.setText(Spannable)
+- Spannable的实现类有：
+    - StringSpannable: `SpannableString spannableString = new SpannableString(CONTENT);`
+- Spannable可以设置样式，具体方法是：
+    - `spannableString.setSpan(span, start, end, Spanned.SPAN_EXCLUSIVE_EXCLUSIVE);`
+    - start和end会截取一段文本
+    - 参数1：span是一个Object类型，表示作用于这段文本的样式
+- 而具体样式又分为四个分支：
+    - 如果一个Span影响字符层次上的文字格式，那么它继承CharacterStyle类
+        - MetricAffectingSpan
+        - SuggestionSpan
+        - BackgroundColorSpan  背景
+        - ClickableSpan    点击
+        - ForegroundColorSpan  前景
+        - MaskFilterSpan    模糊和浮雕
+        - RasterizerSpan
+        - StrikethroughSpan  删除线
+        - UnbderlineSpan  下划线
+    - 如果一个Span影响段落层次上的文字格式，那么它实现ParagraphStyle接口
+        - AlignmentSpan
+        - LeadingMarginSpan
+        - LineBackgroundSpan
+        - LineHeightSpan
+        - TabStopSpan
+        - WrapTogetherSpan
+    - 如果一个Span修改字符层次上的文字外观，那么它实现UpdateAppearance接口
+        - UpdateLayout
+        - BackgroundColorSpan
+        - ClickableSpan
+        - ForegroundColorSpan
+        - MaskFilterSpan
+        - RasterizerSpan
+        - StrikethroughSpan
+        - UnderlineSpan
+    - 如果一个Span修改字符层次上的度量或者尺寸，那么它实现UpdateLayout接口
+
+
+
+Spannable的文章：
+- http://www.jcodecraeer.com/a/anzhuokaifa/androidkaifa/2015/0305/2535.html
+
+
+
+
+
 > Android平台下的富文本解析器
 
 * 流式操作

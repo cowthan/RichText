@@ -1,4 +1,6 @@
 <resources>
     <string name="app_name">RichTextDemo</string>
     <string name="hello_world">"@ChuckNorris does not use @JakeWharton libraries to develop on #Android."</string>
+    <string name="bacon_ipsum">Frankfurter strip steak sirloin kielbasa drumstick tongue chicken, rump cow shoulder ribeye kevin ground round flank. Ham pork chop rump, kevin bresaola short ribs leberkas Im gonna be Animated!. Spare ribs tail short ribs jerky flank. Ground round chuck cow shank t-bone venison pork belly ball tip fatback tri-tip prosciutto biltong rump tail.</string>
+
 </resources>

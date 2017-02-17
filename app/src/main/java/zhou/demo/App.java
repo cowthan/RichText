@@ -3,6 +3,7 @@ package zhou.demo;
 import android.app.Application;
 
 import org.ayo.Ayo;
+import org.ayo.sample.menu.notify.ToasterDebug;
 
 /**
  * Created by Administrator on 2017/2/16 0016.
@@ -17,5 +18,6 @@ public class App extends Application {
         super.onCreate();
         App.app = this;
         Ayo.init(this, "rich-text", true, true);
+        ToasterDebug.init(this);
     }
 }

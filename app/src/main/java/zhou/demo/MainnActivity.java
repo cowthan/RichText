@@ -11,6 +11,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 import zhou.demo.awesome.AwesomeTextDemo;
+import zhou.demo.markdown.TestMarkDownActivity;
+import zhou.demo.markdown.TestMarkdownActivity2;
+import zhou.demo.markdown.TestMarkdownActivity3;
+import zhou.demo.markdown.TestMarkdownActivity4;
+import zhou.demo.markdown.TestMarkdownActivity5;
+import zhou.demo.markdown.TestMarkdownActivity6;
+import zhou.demo.markdown.TestMarkdownActivity7;
 import zhou.demo.spannable.DemoAbsoluteSizeSpan;
 import zhou.demo.spannable.DemoAlignmentSpan;
 import zhou.demo.spannable.DemoBackgroundColorSpan;
@@ -18,6 +25,10 @@ import zhou.demo.spannable.DemoBulletSpan;
 import zhou.demo.spannable.DemoDrawableMarginSpan;
 import zhou.demo.spannable.DemoForegroundColorSpan;
 import zhou.demo.spannable.DemoIconMarginSpan;
+import zhou.demo.spannable.DemoImageSpan;
+import zhou.demo.spannable.DemoImageSpan2;
+import zhou.demo.spannable.DemoImageSpan3;
+import zhou.demo.spannable.DemoImageSpan4;
 import zhou.demo.spannable.DemoLeadingMarginSpan;
 import zhou.demo.spannable.DemoMaskFilterSpan;
 import zhou.demo.spannable.DemoQuoteSpan;
@@ -30,6 +41,7 @@ import zhou.demo.spannable.DemoTextAppearanceSpan;
 import zhou.demo.spannable.DemoTypefaceSpan;
 import zhou.demo.spannable.DemoURLSpan;
 import zhou.demo.spannable.DemoUnderlineSpan;
+import zhou.demo.spannable2.SpannableTestActivity;
 
 public class MainnActivity extends MainPagerActivity {
 
@@ -103,6 +115,11 @@ public class MainnActivity extends MainPagerActivity {
                 menuItem.addLeaf(new Leaf("IconMarginSpan：图片 + 文字", "", DemoIconMarginSpan.class));
                 menuItem.addLeaf(new Leaf("MaskFilterSpan：滤镜（BlurMaskFilter：模糊），不支持硬件加速", "", DemoMaskFilterSpan.class));
                 menuItem.addLeaf(new Leaf("URLSpan：超链接", "", DemoURLSpan.class));
+                menuItem.addLeaf(new Leaf("ImageSpan：文本中插入图片", "", DemoImageSpan.class));
+                menuItem.addLeaf(new Leaf("ImageSpan：文字 + 表情，图文混排居中", "", DemoImageSpan2.class));
+                menuItem.addLeaf(new Leaf("ImageSpan：文字 + 表情，图文混排居中", "", DemoImageSpan3.class));
+                menuItem.addLeaf(new Leaf("ImageSpan：文字 + 表情，这才对", "", DemoImageSpan4.class));
+                menuItem.addLeaf(new Leaf("进阶demo，拷别人的", "", SpannableTestActivity.class, 1));
             }
 
             menuItem = new MenuItem("AwesomeText", R.drawable.weixin_normal, R.drawable.weixin_pressed);

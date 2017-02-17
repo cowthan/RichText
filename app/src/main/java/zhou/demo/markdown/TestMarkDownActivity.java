@@ -1,4 +1,4 @@
-package zhou.demo;
+package zhou.demo.markdown;
 
 import org.ayo.file.Files;
 

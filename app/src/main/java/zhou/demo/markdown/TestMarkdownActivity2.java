@@ -1,6 +1,8 @@
-package zhou.demo;
+package zhou.demo.markdown;
 
 import org.ayo.lang.Strings;
+
+import zhou.demo.R;
 
 public class TestMarkdownActivity2 extends BaseMarkdownPage {
 

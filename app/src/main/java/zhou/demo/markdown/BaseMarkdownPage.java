@@ -1,4 +1,4 @@
-package zhou.demo;
+package zhou.demo.markdown;
 
 import android.graphics.Color;
 import android.graphics.drawable.ColorDrawable;
@@ -17,6 +17,8 @@ import com.zzhoujay.markdown.MarkDown;
 import org.ayo.component.MasterFragment;
 
 import java.io.InputStream;
+
+import zhou.demo.R;
 
 public abstract class BaseMarkdownPage extends MasterFragment {
 
